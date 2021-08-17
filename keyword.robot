@@ -25,7 +25,7 @@ Search And Select Product1
 #    Press Keys      NONE        PAGE_DOWN
 #    Sleep  2s
     Click Element   ${PRODUCT1}
-    Wait Until Element Is Visible  ${Product1LVD}  10s
+    Wait Until Element Is Visible  ${Product1LVD}  15s
 #    Click Element   ${filter}
 #    Press Keys      NONE        PAGE_DOWN
 #    Sleep  5s
@@ -53,18 +53,18 @@ Search And Select Product2
 #    Press Keys      NONE        PAGE_DOWN
 #    Sleep  2s
     Click Element   ${PRODUCT2}
-    Wait Until Element Is Visible  ${Product2LVD}  10s
+    Wait Until Element Is Visible  ${Product2LVD}  15s
 
 Add to Cart1
     Click Element   ${BTNADDTOCART1}
-    Sleep  5s
+    Sleep  7s
 
 Add to Cart2
     Click Element   ${BTNADDTOCART2}
-    Sleep  5s
+    Sleep  7s
 
 Verify Product On Cart Page
     [Arguments]     ${cartproduct}
     Go To           ${URLCART}  
-    Wait Until Element Is Visible    ${CART}
+    Wait Until Element Is Visible    ${CART}  5s
 #    Element Text Should Be      ${cartproduct}
