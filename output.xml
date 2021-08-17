@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20210818 01:53:33.388" generator="Robot 3.1.2 (Python 2.7.17 on darwin)">
+<robot rpa="false" generated="20210818 02:13:11.076" generator="Robot 3.1.2 (Python 2.7.17 on darwin)">
 <suite source="/Users/saowalak.cha/PycharmProjects/AssignmentGitHub/TestAssignment/test.robot" id="s1" name="Test">
 <test id="s1-t1" name="Search And Add Product To Cart">
 <kw name="Open Page" library="keyword">
@@ -9,8 +9,8 @@
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 </arguments>
-<msg timestamp="20210818 01:53:33.744" level="INFO">Opening browser 'Chrome' to base url 'https://www.powerbuy.co.th'.</msg>
-<status status="PASS" endtime="20210818 01:53:42.879" starttime="20210818 01:53:33.743"></status>
+<msg timestamp="20210818 02:13:11.425" level="INFO">Opening browser 'Chrome' to base url 'https://www.powerbuy.co.th'.</msg>
+<status status="PASS" endtime="20210818 02:13:18.539" starttime="20210818 02:13:11.425"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -18,9 +18,9 @@
 <arg>${SEARCHBOX}</arg>
 <arg>20S</arg>
 </arguments>
-<status status="PASS" endtime="20210818 01:53:43.060" starttime="20210818 01:53:42.880"></status>
+<status status="PASS" endtime="20210818 02:13:18.573" starttime="20210818 02:13:18.539"></status>
 </kw>
-<status status="PASS" endtime="20210818 01:53:43.061" starttime="20210818 01:53:33.743"></status>
+<status status="PASS" endtime="20210818 02:13:18.574" starttime="20210818 02:13:11.424"></status>
 </kw>
 <kw name="Search And Select Product1" library="keyword">
 <kw name="Click Element" library="Selenium2Library">
@@ -28,8 +28,8 @@
 <arguments>
 <arg>${SEARCHBOX}</arg>
 </arguments>
-<msg timestamp="20210818 01:53:43.063" level="INFO">Clicking element '//*[@id="txt-searchBox-input"]'.</msg>
-<status status="PASS" endtime="20210818 01:53:43.154" starttime="20210818 01:53:43.063"></status>
+<msg timestamp="20210818 02:13:18.574" level="INFO">Clicking element '//*[@id="txt-searchBox-input"]'.</msg>
+<status status="PASS" endtime="20210818 02:13:18.735" starttime="20210818 02:13:18.574"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -37,24 +37,24 @@
 <arg>${SEARCHBOX}</arg>
 <arg>${PRODUCT}</arg>
 </arguments>
-<msg timestamp="20210818 01:53:43.155" level="INFO">Typing text 'TV' into text field '//*[@id="txt-searchBox-input"]'.</msg>
-<status status="PASS" endtime="20210818 01:53:43.285" starttime="20210818 01:53:43.155"></status>
+<msg timestamp="20210818 02:13:18.736" level="INFO">Typing text 'TV' into text field '//*[@id="txt-searchBox-input"]'.</msg>
+<status status="PASS" endtime="20210818 02:13:19.184" starttime="20210818 02:13:18.735"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${BTNSEARCH}</arg>
 </arguments>
-<msg timestamp="20210818 01:53:43.285" level="INFO">Clicking element '//*[@id="btn-searchBox-input"]'.</msg>
-<status status="PASS" endtime="20210818 01:53:43.671" starttime="20210818 01:53:43.285"></status>
+<msg timestamp="20210818 02:13:19.184" level="INFO">Clicking element '//*[@id="btn-searchBox-input"]'.</msg>
+<status status="PASS" endtime="20210818 02:13:19.390" starttime="20210818 02:13:19.184"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20210818 01:53:48.671" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20210818 01:53:48.672" starttime="20210818 01:53:43.671"></status>
+<msg timestamp="20210818 02:13:24.391" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20210818 02:13:24.392" starttime="20210818 02:13:19.391"></status>
 </kw>
 <kw name="Press Keys" library="Selenium2Library">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -62,18 +62,18 @@
 <arg>NONE</arg>
 <arg>PAGE_DOWN</arg>
 </arguments>
-<msg timestamp="20210818 01:53:48.673" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
-<msg timestamp="20210818 01:53:48.673" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
-<msg timestamp="20210818 01:53:48.673" level="INFO">Releasing special key PAGE_DOWN.</msg>
-<status status="PASS" endtime="20210818 01:53:49.550" starttime="20210818 01:53:48.672"></status>
+<msg timestamp="20210818 02:13:24.393" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210818 02:13:24.394" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210818 02:13:24.394" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210818 02:13:24.418" starttime="20210818 02:13:24.392"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20210818 01:53:52.551" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210818 01:53:52.552" starttime="20210818 01:53:49.550"></status>
+<msg timestamp="20210818 02:13:27.419" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210818 02:13:27.419" starttime="20210818 02:13:24.418"></status>
 </kw>
 <kw name="Press Keys" library="Selenium2Library">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -81,18 +81,18 @@
 <arg>NONE</arg>
 <arg>PAGE_DOWN</arg>
 </arguments>
-<msg timestamp="20210818 01:53:52.554" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
-<msg timestamp="20210818 01:53:52.554" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
-<msg timestamp="20210818 01:53:52.554" level="INFO">Releasing special key PAGE_DOWN.</msg>
-<status status="PASS" endtime="20210818 01:53:52.575" starttime="20210818 01:53:52.552"></status>
+<msg timestamp="20210818 02:13:27.421" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210818 02:13:27.421" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210818 02:13:27.422" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210818 02:13:27.435" starttime="20210818 02:13:27.419"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20210818 01:53:55.576" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210818 01:53:55.576" starttime="20210818 01:53:52.575"></status>
+<msg timestamp="20210818 02:13:30.437" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210818 02:13:30.437" starttime="20210818 02:13:27.435"></status>
 </kw>
 <kw name="Press Keys" library="Selenium2Library">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -100,18 +100,18 @@
 <arg>NONE</arg>
 <arg>PAGE_DOWN</arg>
 </arguments>
-<msg timestamp="20210818 01:53:55.577" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
-<msg timestamp="20210818 01:53:55.578" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
-<msg timestamp="20210818 01:53:55.578" level="INFO">Releasing special key PAGE_DOWN.</msg>
-<status status="PASS" endtime="20210818 01:53:55.593" starttime="20210818 01:53:55.576"></status>
+<msg timestamp="20210818 02:13:30.438" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210818 02:13:30.438" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210818 02:13:30.438" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210818 02:13:30.449" starttime="20210818 02:13:30.437"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20210818 01:53:58.593" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210818 01:53:58.594" starttime="20210818 01:53:55.593"></status>
+<msg timestamp="20210818 02:13:33.451" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210818 02:13:33.451" starttime="20210818 02:13:30.450"></status>
 </kw>
 <kw name="Press Keys" library="Selenium2Library">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -119,18 +119,18 @@
 <arg>NONE</arg>
 <arg>PAGE_DOWN</arg>
 </arguments>
-<msg timestamp="20210818 01:53:58.595" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
-<msg timestamp="20210818 01:53:58.595" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
-<msg timestamp="20210818 01:53:58.595" level="INFO">Releasing special key PAGE_DOWN.</msg>
-<status status="PASS" endtime="20210818 01:53:58.611" starttime="20210818 01:53:58.594"></status>
+<msg timestamp="20210818 02:13:33.453" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210818 02:13:33.453" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210818 02:13:33.453" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210818 02:13:33.469" starttime="20210818 02:13:33.451"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20210818 01:54:01.612" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210818 01:54:01.612" starttime="20210818 01:53:58.611"></status>
+<msg timestamp="20210818 02:13:36.471" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210818 02:13:36.471" starttime="20210818 02:13:33.469"></status>
 </kw>
 <kw name="Press Keys" library="Selenium2Library">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -138,18 +138,18 @@
 <arg>NONE</arg>
 <arg>PAGE_DOWN</arg>
 </arguments>
-<msg timestamp="20210818 01:54:01.613" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
-<msg timestamp="20210818 01:54:01.614" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
-<msg timestamp="20210818 01:54:01.614" level="INFO">Releasing special key PAGE_DOWN.</msg>
-<status status="PASS" endtime="20210818 01:54:01.625" starttime="20210818 01:54:01.612"></status>
+<msg timestamp="20210818 02:13:36.472" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210818 02:13:36.472" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210818 02:13:36.472" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210818 02:13:36.486" starttime="20210818 02:13:36.471"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20210818 01:54:04.626" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210818 01:54:04.626" starttime="20210818 01:54:01.625"></status>
+<msg timestamp="20210818 02:13:39.488" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210818 02:13:39.488" starttime="20210818 02:13:36.486"></status>
 </kw>
 <kw name="Press Keys" library="Selenium2Library">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -157,42 +157,42 @@
 <arg>NONE</arg>
 <arg>PAGE_DOWN</arg>
 </arguments>
-<msg timestamp="20210818 01:54:04.628" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
-<msg timestamp="20210818 01:54:04.628" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
-<msg timestamp="20210818 01:54:04.628" level="INFO">Releasing special key PAGE_DOWN.</msg>
-<status status="PASS" endtime="20210818 01:54:04.654" starttime="20210818 01:54:04.627"></status>
+<msg timestamp="20210818 02:13:39.489" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210818 02:13:39.489" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210818 02:13:39.489" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210818 02:13:39.520" starttime="20210818 02:13:39.488"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20210818 01:54:07.655" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210818 01:54:07.656" starttime="20210818 01:54:04.654"></status>
+<msg timestamp="20210818 02:13:42.521" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210818 02:13:42.522" starttime="20210818 02:13:39.520"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${FilterTVA}</arg>
 </arguments>
-<msg timestamp="20210818 01:54:07.656" level="INFO">Clicking element '//*[@id="layout"]/div[2]/div[3]/div[2]/div/div[2]/div[1]/div/div/div/div/div[30]/div[2]/div/div/div[1]/div[1]/div'.</msg>
-<status status="PASS" endtime="20210818 01:54:08.022" starttime="20210818 01:54:07.656"></status>
+<msg timestamp="20210818 02:13:42.523" level="INFO">Clicking element '//*[@id="layout"]/div[2]/div[3]/div[2]/div/div[2]/div[1]/div/div/div/div/div[30]/div[2]/div/div/div[1]/div[1]/div'.</msg>
+<status status="PASS" endtime="20210818 02:13:42.865" starttime="20210818 02:13:42.522"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20210818 01:54:13.024" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20210818 01:54:13.024" starttime="20210818 01:54:08.023"></status>
+<msg timestamp="20210818 02:13:47.868" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20210818 02:13:47.869" starttime="20210818 02:13:42.866"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${PRODUCT1}</arg>
 </arguments>
-<msg timestamp="20210818 01:54:13.025" level="INFO">Clicking element '//*[@id="txt-productName-264098"]'.</msg>
-<status status="PASS" endtime="20210818 01:54:13.820" starttime="20210818 01:54:13.024"></status>
+<msg timestamp="20210818 02:13:47.869" level="INFO">Clicking element '//*[@id="txt-productName-264098"]'.</msg>
+<status status="PASS" endtime="20210818 02:13:48.352" starttime="20210818 02:13:47.869"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -200,9 +200,9 @@
 <arg>${Product1LVD}</arg>
 <arg>15s</arg>
 </arguments>
-<status status="PASS" endtime="20210818 01:54:15.191" starttime="20210818 01:54:13.821"></status>
+<status status="PASS" endtime="20210818 02:13:51.804" starttime="20210818 02:13:48.352"></status>
 </kw>
-<status status="PASS" endtime="20210818 01:54:15.191" starttime="20210818 01:53:43.062"></status>
+<status status="PASS" endtime="20210818 02:13:51.804" starttime="20210818 02:13:18.574"></status>
 </kw>
 <kw name="Add to Cart1" library="keyword">
 <kw name="Click Element" library="Selenium2Library">
@@ -210,18 +210,18 @@
 <arguments>
 <arg>${BTNADDTOCART1}</arg>
 </arguments>
-<msg timestamp="20210818 01:54:15.192" level="INFO">Clicking element '//*[@id="btn-addCart-264098"]'.</msg>
-<status status="PASS" endtime="20210818 01:54:15.316" starttime="20210818 01:54:15.192"></status>
+<msg timestamp="20210818 02:13:51.804" level="INFO">Clicking element '//*[@id="btn-addCart-264098"]'.</msg>
+<status status="PASS" endtime="20210818 02:13:51.885" starttime="20210818 02:13:51.804"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>7s</arg>
 </arguments>
-<msg timestamp="20210818 01:54:22.317" level="INFO">Slept 7 seconds</msg>
-<status status="PASS" endtime="20210818 01:54:22.317" starttime="20210818 01:54:15.316"></status>
+<msg timestamp="20210818 02:13:58.886" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" endtime="20210818 02:13:58.887" starttime="20210818 02:13:51.886"></status>
 </kw>
-<status status="PASS" endtime="20210818 01:54:22.318" starttime="20210818 01:54:15.191"></status>
+<status status="PASS" endtime="20210818 02:13:58.887" starttime="20210818 02:13:51.804"></status>
 </kw>
 <kw name="Search And Select Product2" library="keyword">
 <kw name="Click Element" library="Selenium2Library">
@@ -229,8 +229,8 @@
 <arguments>
 <arg>${SEARCHBOX}</arg>
 </arguments>
-<msg timestamp="20210818 01:54:22.319" level="INFO">Clicking element '//*[@id="txt-searchBox-input"]'.</msg>
-<status status="PASS" endtime="20210818 01:54:22.437" starttime="20210818 01:54:22.319"></status>
+<msg timestamp="20210818 02:13:58.889" level="INFO">Clicking element '//*[@id="txt-searchBox-input"]'.</msg>
+<status status="PASS" endtime="20210818 02:13:58.985" starttime="20210818 02:13:58.888"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -238,24 +238,24 @@
 <arg>${SEARCHBOX}</arg>
 <arg>${PRODUCT}</arg>
 </arguments>
-<msg timestamp="20210818 01:54:22.438" level="INFO">Typing text 'TV' into text field '//*[@id="txt-searchBox-input"]'.</msg>
-<status status="PASS" endtime="20210818 01:54:22.817" starttime="20210818 01:54:22.437"></status>
+<msg timestamp="20210818 02:13:58.986" level="INFO">Typing text 'TV' into text field '//*[@id="txt-searchBox-input"]'.</msg>
+<status status="PASS" endtime="20210818 02:13:59.332" starttime="20210818 02:13:58.985"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${BTNSEARCH}</arg>
 </arguments>
-<msg timestamp="20210818 01:54:22.818" level="INFO">Clicking element '//*[@id="btn-searchBox-input"]'.</msg>
-<status status="PASS" endtime="20210818 01:54:24.019" starttime="20210818 01:54:22.817"></status>
+<msg timestamp="20210818 02:13:59.332" level="INFO">Clicking element '//*[@id="btn-searchBox-input"]'.</msg>
+<status status="PASS" endtime="20210818 02:14:00.736" starttime="20210818 02:13:59.332"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20210818 01:54:29.021" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20210818 01:54:29.022" starttime="20210818 01:54:24.019"></status>
+<msg timestamp="20210818 02:14:05.739" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20210818 02:14:05.739" starttime="20210818 02:14:00.736"></status>
 </kw>
 <kw name="Press Keys" library="Selenium2Library">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -263,18 +263,18 @@
 <arg>NONE</arg>
 <arg>PAGE_DOWN</arg>
 </arguments>
-<msg timestamp="20210818 01:54:29.024" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
-<msg timestamp="20210818 01:54:29.024" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
-<msg timestamp="20210818 01:54:29.024" level="INFO">Releasing special key PAGE_DOWN.</msg>
-<status status="PASS" endtime="20210818 01:54:29.052" starttime="20210818 01:54:29.022"></status>
+<msg timestamp="20210818 02:14:05.741" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210818 02:14:05.741" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210818 02:14:05.741" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210818 02:14:05.767" starttime="20210818 02:14:05.739"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20210818 01:54:32.055" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210818 01:54:32.055" starttime="20210818 01:54:29.053"></status>
+<msg timestamp="20210818 02:14:08.769" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210818 02:14:08.770" starttime="20210818 02:14:05.767"></status>
 </kw>
 <kw name="Press Keys" library="Selenium2Library">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -282,18 +282,18 @@
 <arg>NONE</arg>
 <arg>PAGE_DOWN</arg>
 </arguments>
-<msg timestamp="20210818 01:54:32.057" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
-<msg timestamp="20210818 01:54:32.058" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
-<msg timestamp="20210818 01:54:32.058" level="INFO">Releasing special key PAGE_DOWN.</msg>
-<status status="PASS" endtime="20210818 01:54:32.077" starttime="20210818 01:54:32.056"></status>
+<msg timestamp="20210818 02:14:08.771" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210818 02:14:08.771" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210818 02:14:08.771" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210818 02:14:08.786" starttime="20210818 02:14:08.770"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20210818 01:54:35.079" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210818 01:54:35.079" starttime="20210818 01:54:32.078"></status>
+<msg timestamp="20210818 02:14:11.787" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210818 02:14:11.787" starttime="20210818 02:14:08.786"></status>
 </kw>
 <kw name="Press Keys" library="Selenium2Library">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -301,18 +301,18 @@
 <arg>NONE</arg>
 <arg>PAGE_DOWN</arg>
 </arguments>
-<msg timestamp="20210818 01:54:35.081" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
-<msg timestamp="20210818 01:54:35.081" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
-<msg timestamp="20210818 01:54:35.081" level="INFO">Releasing special key PAGE_DOWN.</msg>
-<status status="PASS" endtime="20210818 01:54:35.101" starttime="20210818 01:54:35.080"></status>
+<msg timestamp="20210818 02:14:11.789" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210818 02:14:11.789" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210818 02:14:11.789" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210818 02:14:11.803" starttime="20210818 02:14:11.788"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20210818 01:54:38.102" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210818 01:54:38.102" starttime="20210818 01:54:35.102"></status>
+<msg timestamp="20210818 02:14:14.806" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210818 02:14:14.807" starttime="20210818 02:14:11.804"></status>
 </kw>
 <kw name="Press Keys" library="Selenium2Library">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -320,18 +320,18 @@
 <arg>NONE</arg>
 <arg>PAGE_DOWN</arg>
 </arguments>
-<msg timestamp="20210818 01:54:38.103" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
-<msg timestamp="20210818 01:54:38.103" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
-<msg timestamp="20210818 01:54:38.103" level="INFO">Releasing special key PAGE_DOWN.</msg>
-<status status="PASS" endtime="20210818 01:54:38.109" starttime="20210818 01:54:38.102"></status>
+<msg timestamp="20210818 02:14:14.808" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210818 02:14:14.808" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210818 02:14:14.809" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210818 02:14:14.830" starttime="20210818 02:14:14.807"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20210818 01:54:41.111" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210818 01:54:41.111" starttime="20210818 01:54:38.109"></status>
+<msg timestamp="20210818 02:14:17.831" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210818 02:14:17.831" starttime="20210818 02:14:14.830"></status>
 </kw>
 <kw name="Press Keys" library="Selenium2Library">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -339,18 +339,18 @@
 <arg>NONE</arg>
 <arg>PAGE_DOWN</arg>
 </arguments>
-<msg timestamp="20210818 01:54:41.113" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
-<msg timestamp="20210818 01:54:41.113" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
-<msg timestamp="20210818 01:54:41.113" level="INFO">Releasing special key PAGE_DOWN.</msg>
-<status status="PASS" endtime="20210818 01:54:41.124" starttime="20210818 01:54:41.112"></status>
+<msg timestamp="20210818 02:14:17.832" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210818 02:14:17.832" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210818 02:14:17.832" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210818 02:14:17.848" starttime="20210818 02:14:17.831"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20210818 01:54:44.126" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210818 01:54:44.126" starttime="20210818 01:54:41.125"></status>
+<msg timestamp="20210818 02:14:20.849" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210818 02:14:20.850" starttime="20210818 02:14:17.848"></status>
 </kw>
 <kw name="Press Keys" library="Selenium2Library">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -358,42 +358,42 @@
 <arg>NONE</arg>
 <arg>PAGE_DOWN</arg>
 </arguments>
-<msg timestamp="20210818 01:54:44.128" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
-<msg timestamp="20210818 01:54:44.129" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
-<msg timestamp="20210818 01:54:44.129" level="INFO">Releasing special key PAGE_DOWN.</msg>
-<status status="PASS" endtime="20210818 01:54:44.152" starttime="20210818 01:54:44.127"></status>
+<msg timestamp="20210818 02:14:20.851" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210818 02:14:20.852" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210818 02:14:20.852" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210818 02:14:20.865" starttime="20210818 02:14:20.850"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20210818 01:54:47.154" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210818 01:54:47.154" starttime="20210818 01:54:44.153"></status>
+<msg timestamp="20210818 02:14:23.867" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210818 02:14:23.867" starttime="20210818 02:14:20.866"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${FilterTVB}</arg>
 </arguments>
-<msg timestamp="20210818 01:54:47.155" level="INFO">Clicking element '//*[@id="layout"]/div[2]/div[3]/div[2]/div/div[2]/div[1]/div/div/div/div/div[30]/div[2]/div/div/div[2]/div[1]/div'.</msg>
-<status status="PASS" endtime="20210818 01:54:47.506" starttime="20210818 01:54:47.154"></status>
+<msg timestamp="20210818 02:14:23.869" level="INFO">Clicking element '//*[@id="layout"]/div[2]/div[3]/div[2]/div/div[2]/div[1]/div/div/div/div/div[30]/div[2]/div/div/div[2]/div[1]/div'.</msg>
+<status status="PASS" endtime="20210818 02:14:24.222" starttime="20210818 02:14:23.868"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20210818 01:54:52.508" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20210818 01:54:52.508" starttime="20210818 01:54:47.506"></status>
+<msg timestamp="20210818 02:14:29.223" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20210818 02:14:29.223" starttime="20210818 02:14:24.222"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${PRODUCT2}</arg>
 </arguments>
-<msg timestamp="20210818 01:54:52.509" level="INFO">Clicking element '//*[@id="txt-productName-262249"]'.</msg>
-<status status="PASS" endtime="20210818 01:54:52.887" starttime="20210818 01:54:52.508"></status>
+<msg timestamp="20210818 02:14:29.224" level="INFO">Clicking element '//*[@id="txt-productName-262249"]'.</msg>
+<status status="PASS" endtime="20210818 02:14:29.600" starttime="20210818 02:14:29.223"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -401,9 +401,9 @@
 <arg>${Product2LVD}</arg>
 <arg>15s</arg>
 </arguments>
-<status status="PASS" endtime="20210818 01:54:54.047" starttime="20210818 01:54:52.887"></status>
+<status status="PASS" endtime="20210818 02:14:30.858" starttime="20210818 02:14:29.600"></status>
 </kw>
-<status status="PASS" endtime="20210818 01:54:54.047" starttime="20210818 01:54:22.318"></status>
+<status status="PASS" endtime="20210818 02:14:30.858" starttime="20210818 02:13:58.888"></status>
 </kw>
 <kw name="Add to Cart2" library="keyword">
 <kw name="Click Element" library="Selenium2Library">
@@ -411,23 +411,23 @@
 <arguments>
 <arg>${BTNADDTOCART2}</arg>
 </arguments>
-<msg timestamp="20210818 01:54:54.048" level="INFO">Clicking element '//*[@id="btn-addCart-262249"]'.</msg>
-<status status="PASS" endtime="20210818 01:54:54.233" starttime="20210818 01:54:54.048"></status>
+<msg timestamp="20210818 02:14:30.859" level="INFO">Clicking element '//*[@id="btn-addCart-262249"]'.</msg>
+<status status="PASS" endtime="20210818 02:14:30.922" starttime="20210818 02:14:30.858"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>7s</arg>
 </arguments>
-<msg timestamp="20210818 01:55:01.234" level="INFO">Slept 7 seconds</msg>
-<status status="PASS" endtime="20210818 01:55:01.234" starttime="20210818 01:54:54.234"></status>
+<msg timestamp="20210818 02:14:37.924" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" endtime="20210818 02:14:37.924" starttime="20210818 02:14:30.923"></status>
 </kw>
-<status status="PASS" endtime="20210818 01:55:01.235" starttime="20210818 01:54:54.048"></status>
+<status status="PASS" endtime="20210818 02:14:37.925" starttime="20210818 02:14:30.858"></status>
 </kw>
 <tags>
 <tag>success</tag>
 </tags>
-<status status="PASS" endtime="20210818 01:55:01.235" critical="yes" starttime="20210818 01:53:33.742"></status>
+<status status="PASS" endtime="20210818 02:14:37.925" critical="yes" starttime="20210818 02:13:11.424"></status>
 </test>
 <test id="s1-t2" name="Verify Shopping Cart">
 <kw name="Verify Product On Cart Page" library="keyword">
@@ -439,8 +439,8 @@
 <arguments>
 <arg>${URLCART}</arg>
 </arguments>
-<msg timestamp="20210818 01:55:01.238" level="INFO">Opening url 'https://www.powerbuy.co.th/th/cart'</msg>
-<status status="PASS" endtime="20210818 01:55:05.195" starttime="20210818 01:55:01.238"></status>
+<msg timestamp="20210818 02:14:37.927" level="INFO">Opening url 'https://www.powerbuy.co.th/th/cart'</msg>
+<status status="PASS" endtime="20210818 02:14:41.834" starttime="20210818 02:14:37.926"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -448,9 +448,9 @@
 <arg>${CART}</arg>
 <arg>5s</arg>
 </arguments>
-<status status="PASS" endtime="20210818 01:55:05.226" starttime="20210818 01:55:05.195"></status>
+<status status="PASS" endtime="20210818 02:14:41.945" starttime="20210818 02:14:41.834"></status>
 </kw>
-<status status="PASS" endtime="20210818 01:55:05.226" starttime="20210818 01:55:01.237"></status>
+<status status="PASS" endtime="20210818 02:14:41.945" starttime="20210818 02:14:37.926"></status>
 </kw>
 <kw name="Verify Product On Cart Page" library="keyword">
 <arguments>
@@ -461,8 +461,8 @@
 <arguments>
 <arg>${URLCART}</arg>
 </arguments>
-<msg timestamp="20210818 01:55:05.227" level="INFO">Opening url 'https://www.powerbuy.co.th/th/cart'</msg>
-<status status="PASS" endtime="20210818 01:55:06.326" starttime="20210818 01:55:05.227"></status>
+<msg timestamp="20210818 02:14:41.946" level="INFO">Opening url 'https://www.powerbuy.co.th/th/cart'</msg>
+<status status="PASS" endtime="20210818 02:14:43.061" starttime="20210818 02:14:41.946"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -470,17 +470,17 @@
 <arg>${CART}</arg>
 <arg>5s</arg>
 </arguments>
-<status status="PASS" endtime="20210818 01:55:07.342" starttime="20210818 01:55:06.326"></status>
+<status status="PASS" endtime="20210818 02:14:44.230" starttime="20210818 02:14:43.061"></status>
 </kw>
-<status status="PASS" endtime="20210818 01:55:07.342" starttime="20210818 01:55:05.226"></status>
+<status status="PASS" endtime="20210818 02:14:44.230" starttime="20210818 02:14:41.945"></status>
 </kw>
-<status status="PASS" endtime="20210818 01:55:07.342" critical="yes" starttime="20210818 01:55:01.236"></status>
+<status status="PASS" endtime="20210818 02:14:44.230" critical="yes" starttime="20210818 02:14:37.925"></status>
 </test>
 <kw type="teardown" name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20210818 01:55:08.633" starttime="20210818 01:55:07.343"></status>
+<status status="PASS" endtime="20210818 02:14:45.509" starttime="20210818 02:14:44.231"></status>
 </kw>
-<status status="PASS" endtime="20210818 01:55:08.633" starttime="20210818 01:53:33.390"></status>
+<status status="PASS" endtime="20210818 02:14:45.510" starttime="20210818 02:13:11.079"></status>
 </suite>
 <statistics>
 <total>
