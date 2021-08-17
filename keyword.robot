@@ -22,15 +22,9 @@ Search And Select Product1
     Sleep  3s
     Click Element   ${FilterTVA}
     Sleep  5s
-#    Press Keys      NONE        PAGE_DOWN
-#    Sleep  2s
     Click Element   ${PRODUCT1}
     Wait Until Element Is Visible  ${Product1LVD}  15s
-#    Click Element   ${filter}
-#    Press Keys      NONE        PAGE_DOWN
-#    Sleep  5s
-#    Click Element   ${productname}
-#    Wait Until Element Is Visible   ${BTNADDTOCART}    20S
+
 Search And Select Product2
     Click Element   ${SEARCHBOX}
     Input Text      ${SEARCHBOX}  ${PRODUCT}
@@ -50,8 +44,6 @@ Search And Select Product2
     Sleep  3s
     Click Element   ${FilterTVB}
     Sleep  5s
-#    Press Keys      NONE        PAGE_DOWN
-#    Sleep  2s
     Click Element   ${PRODUCT2}
     Wait Until Element Is Visible  ${Product2LVD}  15s
 
@@ -67,4 +59,3 @@ Verify Product On Cart Page
     [Arguments]     ${cartproduct}
     Go To           ${URLCART}  
     Wait Until Element Is Visible    ${CART}  5s
-#    Element Text Should Be      ${cartproduct}
