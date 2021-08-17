@@ -3,29 +3,68 @@ Open Page
     Open Browser    ${URL}  ${Browser}
     Wait Until Element Is Visible   ${SEARCHBOX}    20S
 
-Search And Select Product
-    [Arguments]     ${product}    
-    ...    ${filter}    
-    ...    ${productname}    
-    ...    ${btnaddtocart}
-    Click Element   ${SEARCHBOX}    
-    Input Text      ${SEARCHBOX}  ${product}
+Search And Select Product1
+    Click Element   ${SEARCHBOX}
+    Input Text      ${SEARCHBOX}  ${PRODUCT}
     Click Element   ${BTNSEARCH}
-    Wait Until Element Is Visible    ${FILTER}  10s
-    Press Keys      NONE        PAGE_DOWN
     Sleep  5s
-    Click Element   ${filter}
     Press Keys      NONE        PAGE_DOWN
+    Sleep  3s
+    Press Keys      NONE        PAGE_DOWN
+    Sleep  3s
+    Press Keys      NONE        PAGE_DOWN
+    Sleep  3s
+    Press Keys      NONE        PAGE_DOWN
+    Sleep  3s
+    Press Keys      NONE        PAGE_DOWN
+    Sleep  3s
+    Press Keys      NONE        PAGE_DOWN
+    Sleep  3s
+    Click Element   ${FilterTVA}
     Sleep  5s
-    Click Element   ${productname}
-    Wait Until Element Is Visible   ${BTNADDTOCART}    10S     
+#    Press Keys      NONE        PAGE_DOWN
+#    Sleep  2s
+    Click Element   ${PRODUCT1}
+    Wait Until Element Is Visible  ${Product1LVD}  10s
+#    Click Element   ${filter}
+#    Press Keys      NONE        PAGE_DOWN
+#    Sleep  5s
+#    Click Element   ${productname}
+#    Wait Until Element Is Visible   ${BTNADDTOCART}    20S
+Search And Select Product2
+    Click Element   ${SEARCHBOX}
+    Input Text      ${SEARCHBOX}  ${PRODUCT}
+    Click Element   ${BTNSEARCH}
+    Sleep  5s
+    Press Keys      NONE        PAGE_DOWN
+    Sleep  3s
+    Press Keys      NONE        PAGE_DOWN
+    Sleep  3s
+    Press Keys      NONE        PAGE_DOWN
+    Sleep  3s
+    Press Keys      NONE        PAGE_DOWN
+    Sleep  3s
+    Press Keys      NONE        PAGE_DOWN
+    Sleep  3s
+    Press Keys      NONE        PAGE_DOWN
+    Sleep  3s
+    Click Element   ${FilterTVB}
+    Sleep  5s
+#    Press Keys      NONE        PAGE_DOWN
+#    Sleep  2s
+    Click Element   ${PRODUCT2}
+    Wait Until Element Is Visible  ${Product2LVD}  10s
 
-Add to Cart
-    [Arguments]     ${btnaddtocart}
-    Click Element   ${btnaddtocart}   
+Add to Cart1
+    Click Element   ${BTNADDTOCART1}
+    Sleep  5s
+
+Add to Cart2
+    Click Element   ${BTNADDTOCART2}
+    Sleep  5s
 
 Verify Product On Cart Page
     [Arguments]     ${cartproduct}
     Go To           ${URLCART}  
     Wait Until Element Is Visible    ${CART}
-    Element Text Should Be      ${cartproduct}      
+#    Element Text Should Be      ${cartproduct}

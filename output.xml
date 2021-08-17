@@ -1,130 +1,511 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20210817 19:50:38.161" generator="Robot 3.1.2 (Python 2.7.17 on darwin)">
-<suite source="/Users/saowalak.cha/PycharmProjects/Assignment/test.robot" id="s1" name="Test">
+<robot rpa="false" generated="20210817 23:13:29.383" generator="Robot 3.1.2 (Python 2.7.17 on darwin)">
+<suite source="/Users/saowalak.cha/PycharmProjects/AssignmentGitHub/TestAssignment/test.robot" id="s1" name="Test">
 <test id="s1-t1" name="Search And Add Product To Cart">
 <kw name="Open Page" library="keyword">
-<kw name="Open Browser" library="SeleniumLibrary">
+<kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 </arguments>
-<msg timestamp="20210817 19:50:38.459" level="INFO">Opening browser 'Chrome' to base url 'https://www.powerbuy.co.th'.</msg>
-<status status="PASS" endtime="20210817 19:50:46.276" starttime="20210817 19:50:38.459"></status>
+<msg timestamp="20210817 23:13:29.688" level="INFO">Opening browser 'Chrome' to base url 'https://www.powerbuy.co.th'.</msg>
+<status status="PASS" endtime="20210817 23:13:38.117" starttime="20210817 23:13:29.688"></status>
 </kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${SEARCHBOX}</arg>
 <arg>20S</arg>
 </arguments>
-<status status="PASS" endtime="20210817 19:50:46.312" starttime="20210817 19:50:46.277"></status>
+<status status="PASS" endtime="20210817 23:13:38.294" starttime="20210817 23:13:38.117"></status>
 </kw>
-<status status="PASS" endtime="20210817 19:50:46.312" starttime="20210817 19:50:38.459"></status>
+<status status="PASS" endtime="20210817 23:13:38.294" starttime="20210817 23:13:29.687"></status>
 </kw>
-<kw name="Search And Select Product" library="keyword">
-<arguments>
-<arg>${PRODUCT}</arg>
-<arg>${FILTER1}</arg>
-<arg>${PRODUCT1}</arg>
-<arg>${BTNADDTOCART1}</arg>
-</arguments>
-<kw name="Click Element" library="SeleniumLibrary">
+<kw name="Search And Select Product1" library="keyword">
+<kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${SEARCHBOX}</arg>
 </arguments>
-<msg timestamp="20210817 19:50:46.313" level="INFO">Clicking element '//*[@id="txt-searchBox-input"]'.</msg>
-<status status="PASS" endtime="20210817 19:50:46.663" starttime="20210817 19:50:46.313"></status>
+<msg timestamp="20210817 23:13:38.295" level="INFO">Clicking element '//*[@id="txt-searchBox-input"]'.</msg>
+<status status="PASS" endtime="20210817 23:13:38.383" starttime="20210817 23:13:38.294"></status>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
+<kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
 <arguments>
 <arg>${SEARCHBOX}</arg>
-<arg>${product}</arg>
+<arg>${PRODUCT}</arg>
 </arguments>
-<msg timestamp="20210817 19:50:46.664" level="INFO">Typing text 'TV' into text field '//*[@id="txt-searchBox-input"]'.</msg>
-<status status="PASS" endtime="20210817 19:50:46.988" starttime="20210817 19:50:46.663"></status>
+<msg timestamp="20210817 23:13:38.384" level="INFO">Typing text 'TV' into text field '//*[@id="txt-searchBox-input"]'.</msg>
+<status status="PASS" endtime="20210817 23:13:38.513" starttime="20210817 23:13:38.384"></status>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
+<kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${BTNSEARCH}</arg>
 </arguments>
-<msg timestamp="20210817 19:50:46.988" level="INFO">Clicking element '//*[@id="btn-searchBox-input"]'.</msg>
-<status status="PASS" endtime="20210817 19:50:47.157" starttime="20210817 19:50:46.988"></status>
+<msg timestamp="20210817 23:13:38.514" level="INFO">Clicking element '//*[@id="btn-searchBox-input"]'.</msg>
+<status status="PASS" endtime="20210817 23:13:38.887" starttime="20210817 23:13:38.513"></status>
 </kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210817 23:13:43.888" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20210817 23:13:43.888" starttime="20210817 23:13:38.887"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>NONE</arg>
+<arg>PAGE_DOWN</arg>
+</arguments>
+<msg timestamp="20210817 23:13:43.890" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210817 23:13:43.890" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210817 23:13:43.890" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210817 23:13:43.921" starttime="20210817 23:13:43.889"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210817 23:13:46.922" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210817 23:13:46.922" starttime="20210817 23:13:43.921"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>NONE</arg>
+<arg>PAGE_DOWN</arg>
+</arguments>
+<msg timestamp="20210817 23:13:46.924" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210817 23:13:46.924" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210817 23:13:46.925" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210817 23:13:46.943" starttime="20210817 23:13:46.923"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210817 23:13:49.945" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210817 23:13:49.945" starttime="20210817 23:13:46.943"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>NONE</arg>
+<arg>PAGE_DOWN</arg>
+</arguments>
+<msg timestamp="20210817 23:13:49.947" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210817 23:13:49.948" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210817 23:13:49.948" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210817 23:13:49.969" starttime="20210817 23:13:49.946"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210817 23:13:52.970" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210817 23:13:52.970" starttime="20210817 23:13:49.969"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>NONE</arg>
+<arg>PAGE_DOWN</arg>
+</arguments>
+<msg timestamp="20210817 23:13:52.972" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210817 23:13:52.972" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210817 23:13:52.972" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210817 23:13:52.986" starttime="20210817 23:13:52.970"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210817 23:13:55.989" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210817 23:13:55.989" starttime="20210817 23:13:52.987"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>NONE</arg>
+<arg>PAGE_DOWN</arg>
+</arguments>
+<msg timestamp="20210817 23:13:55.990" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210817 23:13:55.991" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210817 23:13:55.991" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210817 23:13:56.006" starttime="20210817 23:13:55.989"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210817 23:13:59.008" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210817 23:13:59.008" starttime="20210817 23:13:56.006"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>NONE</arg>
+<arg>PAGE_DOWN</arg>
+</arguments>
+<msg timestamp="20210817 23:13:59.009" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210817 23:13:59.010" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210817 23:13:59.010" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210817 23:13:59.025" starttime="20210817 23:13:59.008"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210817 23:14:02.027" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210817 23:14:02.027" starttime="20210817 23:13:59.025"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${FilterTVA}</arg>
+</arguments>
+<msg timestamp="20210817 23:14:02.028" level="INFO">Clicking element '//*[@id="layout"]/div[2]/div[3]/div[2]/div/div[2]/div[1]/div/div/div/div/div[30]/div[2]/div/div/div[1]/div[1]/div'.</msg>
+<status status="PASS" endtime="20210817 23:14:02.425" starttime="20210817 23:14:02.027"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210817 23:14:07.427" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20210817 23:14:07.427" starttime="20210817 23:14:02.425"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${PRODUCT1}</arg>
+</arguments>
+<msg timestamp="20210817 23:14:07.428" level="INFO">Clicking element '//*[@id="txt-productName-264098"]'.</msg>
+<status status="PASS" endtime="20210817 23:14:07.801" starttime="20210817 23:14:07.427"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
-<arg>${FILTER}</arg>
+<arg>${Product1LVD}</arg>
 <arg>10s</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210817 19:50:57.940" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20210817 19:50:57.940" starttime="20210817 19:50:57.319"></status>
+<status status="PASS" endtime="20210817 23:14:10.076" starttime="20210817 23:14:07.801"></status>
 </kw>
-<msg timestamp="20210817 19:50:57.944" level="FAIL">Element '..//body/div[@id='app']/div[@id='layout']/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[32]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]' not visible after 10 seconds.</msg>
-<status status="FAIL" endtime="20210817 19:50:57.944" starttime="20210817 19:50:47.157"></status>
+<status status="PASS" endtime="20210817 23:14:10.076" starttime="20210817 23:13:38.294"></status>
 </kw>
-<status status="FAIL" endtime="20210817 19:50:57.944" starttime="20210817 19:50:46.312"></status>
+<kw name="Add to Cart1" library="keyword">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BTNADDTOCART1}</arg>
+</arguments>
+<msg timestamp="20210817 23:14:10.077" level="INFO">Clicking element '//*[@id="btn-addCart-264098"]'.</msg>
+<status status="PASS" endtime="20210817 23:14:10.166" starttime="20210817 23:14:10.076"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210817 23:14:15.167" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20210817 23:14:15.167" starttime="20210817 23:14:10.166"></status>
+</kw>
+<status status="PASS" endtime="20210817 23:14:15.168" starttime="20210817 23:14:10.076"></status>
+</kw>
+<kw name="Search And Select Product2" library="keyword">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SEARCHBOX}</arg>
+</arguments>
+<msg timestamp="20210817 23:14:15.169" level="INFO">Clicking element '//*[@id="txt-searchBox-input"]'.</msg>
+<status status="PASS" endtime="20210817 23:14:15.310" starttime="20210817 23:14:15.168"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SEARCHBOX}</arg>
+<arg>${PRODUCT}</arg>
+</arguments>
+<msg timestamp="20210817 23:14:15.312" level="INFO">Typing text 'TV' into text field '//*[@id="txt-searchBox-input"]'.</msg>
+<status status="PASS" endtime="20210817 23:14:15.630" starttime="20210817 23:14:15.311"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BTNSEARCH}</arg>
+</arguments>
+<msg timestamp="20210817 23:14:15.630" level="INFO">Clicking element '//*[@id="btn-searchBox-input"]'.</msg>
+<status status="PASS" endtime="20210817 23:14:16.836" starttime="20210817 23:14:15.630"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210817 23:14:21.837" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20210817 23:14:21.838" starttime="20210817 23:14:16.836"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>NONE</arg>
+<arg>PAGE_DOWN</arg>
+</arguments>
+<msg timestamp="20210817 23:14:21.839" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210817 23:14:21.839" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210817 23:14:21.839" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210817 23:14:21.854" starttime="20210817 23:14:21.838"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210817 23:14:24.855" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210817 23:14:24.855" starttime="20210817 23:14:21.854"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>NONE</arg>
+<arg>PAGE_DOWN</arg>
+</arguments>
+<msg timestamp="20210817 23:14:24.857" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210817 23:14:24.857" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210817 23:14:24.858" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210817 23:14:24.879" starttime="20210817 23:14:24.855"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210817 23:14:27.881" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210817 23:14:27.881" starttime="20210817 23:14:24.879"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>NONE</arg>
+<arg>PAGE_DOWN</arg>
+</arguments>
+<msg timestamp="20210817 23:14:27.883" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210817 23:14:27.883" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210817 23:14:27.883" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210817 23:14:27.897" starttime="20210817 23:14:27.882"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210817 23:14:30.900" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210817 23:14:30.900" starttime="20210817 23:14:27.898"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>NONE</arg>
+<arg>PAGE_DOWN</arg>
+</arguments>
+<msg timestamp="20210817 23:14:30.902" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210817 23:14:30.902" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210817 23:14:30.902" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210817 23:14:30.918" starttime="20210817 23:14:30.900"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210817 23:14:33.918" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210817 23:14:33.918" starttime="20210817 23:14:30.918"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>NONE</arg>
+<arg>PAGE_DOWN</arg>
+</arguments>
+<msg timestamp="20210817 23:14:33.919" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210817 23:14:33.919" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210817 23:14:33.919" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210817 23:14:33.931" starttime="20210817 23:14:33.919"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210817 23:14:36.932" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210817 23:14:36.933" starttime="20210817 23:14:33.931"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>NONE</arg>
+<arg>PAGE_DOWN</arg>
+</arguments>
+<msg timestamp="20210817 23:14:36.934" level="INFO">Sending key(s) (u'PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210817 23:14:36.934" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210817 23:14:36.934" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" endtime="20210817 23:14:36.949" starttime="20210817 23:14:36.933"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210817 23:14:39.951" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210817 23:14:39.951" starttime="20210817 23:14:36.950"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${FilterTVB}</arg>
+</arguments>
+<msg timestamp="20210817 23:14:39.952" level="INFO">Clicking element '//*[@id="layout"]/div[2]/div[3]/div[2]/div/div[2]/div[1]/div/div/div/div/div[30]/div[2]/div/div/div[2]/div[1]/div'.</msg>
+<status status="PASS" endtime="20210817 23:14:40.432" starttime="20210817 23:14:39.952"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210817 23:14:45.434" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20210817 23:14:45.435" starttime="20210817 23:14:40.432"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${PRODUCT2}</arg>
+</arguments>
+<msg timestamp="20210817 23:14:45.435" level="INFO">Clicking element '//*[@id="txt-productName-262249"]'.</msg>
+<status status="PASS" endtime="20210817 23:14:45.849" starttime="20210817 23:14:45.435"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Product2LVD}</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" endtime="20210817 23:14:48.683" starttime="20210817 23:14:45.849"></status>
+</kw>
+<status status="PASS" endtime="20210817 23:14:48.683" starttime="20210817 23:14:15.168"></status>
+</kw>
+<kw name="Add to Cart2" library="keyword">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BTNADDTOCART2}</arg>
+</arguments>
+<msg timestamp="20210817 23:14:48.684" level="INFO">Clicking element '//*[@id="btn-addCart-262249"]'.</msg>
+<status status="PASS" endtime="20210817 23:14:48.788" starttime="20210817 23:14:48.684"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210817 23:14:53.790" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20210817 23:14:53.790" starttime="20210817 23:14:48.788"></status>
+</kw>
+<status status="PASS" endtime="20210817 23:14:53.791" starttime="20210817 23:14:48.683"></status>
 </kw>
 <tags>
 <tag>success</tag>
 </tags>
-<status status="FAIL" endtime="20210817 19:50:57.944" critical="yes" starttime="20210817 19:50:38.458">Element '..//body/div[@id='app']/div[@id='layout']/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[32]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]' not visible after 10 seconds.</status>
+<status status="PASS" endtime="20210817 23:14:53.791" critical="yes" starttime="20210817 23:13:29.687"></status>
 </test>
 <test id="s1-t2" name="Verify Shopping Cart">
 <kw name="Verify Product On Cart Page" library="keyword">
 <arguments>
 <arg>${CARTPRODUCT1}</arg>
 </arguments>
-<kw name="Go To" library="SeleniumLibrary">
+<kw name="Go To" library="Selenium2Library">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
 <arg>${URLCART}</arg>
 </arguments>
-<msg timestamp="20210817 19:50:57.946" level="INFO">Opening url 'https://www.powerbuy.co.th/th/cart'</msg>
-<status status="PASS" endtime="20210817 19:50:59.775" starttime="20210817 19:50:57.945"></status>
+<msg timestamp="20210817 23:14:53.793" level="INFO">Opening url 'https://www.powerbuy.co.th/th/cart'</msg>
+<status status="PASS" endtime="20210817 23:14:57.532" starttime="20210817 23:14:53.793"></status>
 </kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${CART}</arg>
 </arguments>
-<status status="PASS" endtime="20210817 19:50:59.804" starttime="20210817 19:50:59.776"></status>
+<status status="PASS" endtime="20210817 23:14:57.561" starttime="20210817 23:14:57.532"></status>
 </kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" endtime="20210817 23:14:57.561" starttime="20210817 23:14:53.792"></status>
+</kw>
+<kw name="Verify Product On Cart Page" library="keyword">
 <arguments>
-<arg>${cartproduct}</arg>
+<arg>${CARTPRODUCT2}</arg>
 </arguments>
-<msg timestamp="20210817 19:50:59.805" level="FAIL">Keyword 'SeleniumLibrary.Element Text Should Be' expected 2 to 4 arguments, got 1.</msg>
-<status status="FAIL" endtime="20210817 19:50:59.805" starttime="20210817 19:50:59.805"></status>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URLCART}</arg>
+</arguments>
+<msg timestamp="20210817 23:14:57.562" level="INFO">Opening url 'https://www.powerbuy.co.th/th/cart'</msg>
+<status status="PASS" endtime="20210817 23:14:58.954" starttime="20210817 23:14:57.562"></status>
 </kw>
-<status status="FAIL" endtime="20210817 19:50:59.805" starttime="20210817 19:50:57.945"></status>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${CART}</arg>
+</arguments>
+<status status="PASS" endtime="20210817 23:15:00.033" starttime="20210817 23:14:58.954"></status>
 </kw>
-<status status="FAIL" endtime="20210817 19:50:59.805" critical="yes" starttime="20210817 19:50:57.945">Keyword 'SeleniumLibrary.Element Text Should Be' expected 2 to 4 arguments, got 1.</status>
+<status status="PASS" endtime="20210817 23:15:00.033" starttime="20210817 23:14:57.561"></status>
+</kw>
+<status status="PASS" endtime="20210817 23:15:00.033" critical="yes" starttime="20210817 23:14:53.792"></status>
 </test>
-<kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20210817 19:51:01.006" starttime="20210817 19:50:59.807"></status>
+<status status="PASS" endtime="20210817 23:15:01.340" starttime="20210817 23:15:00.034"></status>
 </kw>
-<status status="FAIL" endtime="20210817 19:51:01.006" starttime="20210817 19:50:38.164"></status>
+<status status="PASS" endtime="20210817 23:15:01.341" starttime="20210817 23:13:29.384"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="2" pass="0">Critical Tests</stat>
-<stat fail="2" pass="0">All Tests</stat>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
 </total>
 <tag>
-<stat fail="1" pass="0">success</stat>
+<stat fail="0" pass="1">success</stat>
 </tag>
 <suite>
-<stat fail="2" id="s1" name="Test" pass="0">Test</stat>
+<stat fail="0" id="s1" name="Test" pass="2">Test</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20210817 23:13:29.686" level="ERROR">Error in file '/Users/saowalak.cha/PycharmProjects/AssignmentGitHub/TestAssignment/test.robot': Importing test library 'ExtendedSelenium2Library' failed: ImportError: No module named ExtendedSelenium2Library
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /usr/local/bin
+  /usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7/lib/python27.zip
+  /usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7
+  /usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-darwin
+  /usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac
+  /usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac/lib-scriptpackages
+  /usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-tk
+  /usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-old
+  /usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-dynload
+  /usr/local/lib/python2.7/site-packages</msg>
 </errors>
 </robot>
