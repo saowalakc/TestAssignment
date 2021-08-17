@@ -5,7 +5,6 @@ Library         String
 Resource        keyword.robot
 Resource        data_resource.robot
 Suite Teardown  Close All Browsers
-Library         ExtendedSelenium2Library
 
 *** Test Cases ***
 Search And Add Product To Cart
